@@ -38,25 +38,25 @@ LSB ：小段
     printenv 打印环境变量
     baudrate=115200 设置串口的波特率
     
-> boorargs=root=/dev/nfs nfsroot=192.168.2.146:/source/fs4412_rootfs init=/linuxrc rw ip=192.168.2.158 console=ttySAC2,115200
-> bootargs=root=/dev/nfs nfsroot=192.168.1.200:/rootfs/rootfs init=/linuxrc rw ip=192.168.1.123 console=ttySAC2,115200
-> bootdelay=3 延时时间
-> ethact=dm9000
-> ethaddr=11:22:33:44:55:66
-> fileaddr=41000000
-> filesize=2E3448
-> fserverip=192.168.1.200
-> gatewayip=192.168.2.134
-> ipaddr=192.168.1.123
-> netmask=255.255.255.0
-> serverip=192.168.1.200
-> stderr=serial
-> stdin=serial
-> stdout=serial
+> boorargs=root=/dev/nfs nfsroot=192.168.2.146:/source/fs4412_rootfs init=/linuxrc rw ip=192.168.2.158 console=ttySAC2,115200  <br/>
+> bootargs=root=/dev/nfs nfsroot=192.168.1.200:/rootfs/rootfs init=/linuxrc rw ip=192.168.1.123 console=ttySAC2,115200  <br/>
+> bootdelay=3 延时时间  <br/>
+> ethact=dm9000  <br/>
+> ethaddr=11:22:33:44:55:66  <br/>
+> fileaddr=41000000  <br/>
+> filesize=2E3448  <br/>
+> fserverip=192.168.1.200  <br/>
+> gatewayip=192.168.2.134  <br/>
+> ipaddr=192.168.1.123  <br/>
+> netmask=255.255.255.0  <br/>
+> serverip=192.168.1.200  <br/>
+> stderr=serial  <br/>
+> stdin=serial  <br/>
+> stdout=serial  <br/>
 
->1. md 查看内存的地址
->2. mm 修改内存的地址，地址会递增
->3. nm 修改内存的地址，地址不递增
+>1. md 查看内存的地址  <br/>
+>2. mm 修改内存的地址，地址会递增  <br/>
+>3. nm 修改内存的地址，地址不递增  <br/>
 
 
 **pc机的启动过程**
