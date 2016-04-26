@@ -17,9 +17,7 @@ LSB ：小段
     > 通过（file 可执行程序的名字），生成arm格式,在目标（fs4412）运行程序
 
 1.1如何值主机上安装交叉编译器
-    1.
-    2.
-    3. 把编译器导出为全局变量
+    1. 把编译器导出为全局变量
         + /etc/priofile -->当前终端下有效
         + /etc/bash.bashrc -->在这个配置文件下添加
             - sudo vi /etc/bash.bashrc
@@ -28,8 +26,7 @@ LSB ：小段
             - source /etc/bash.bashrc
 
             >测试：在终端下输入arm-n tab减 看自动补齐
-
-        + /etc/enviroment -->存放系统的配置文件（导出的环境变量）
+                 + /etc/enviroment -->存放系统的配置文件（导出的环境变量）
 
 1.2挂载
     1. 挂载ip --> sudo mount -t nfs 192.168.X.X:/rootfs 挂载点
@@ -40,21 +37,22 @@ LSB ：小段
     help  查看帮助信息
     printenv 打印环境变量
     baudrate=115200 设置串口的波特率
-boorargs=root=/dev/nfs nfsroot=192.168.2.146:/source/fs4412_rootfs init=/linuxrc rw ip=192.168.2.158 console=ttySAC2,115200
-bootargs=root=/dev/nfs nfsroot=192.168.1.200:/rootfs/rootfs init=/linuxrc rw ip=192.168.1.123 console=ttySAC2,115200
-bootdelay=3 延时时间
-ethact=dm9000
-ethaddr=11:22:33:44:55:66
-fileaddr=41000000
-filesize=2E3448
-fserverip=192.168.1.200
-gatewayip=192.168.2.134
-ipaddr=192.168.1.123
-netmask=255.255.255.0
-serverip=192.168.1.200
-stderr=serial
-stdin=serial
-stdout=serial
+    
+> boorargs=root=/dev/nfs nfsroot=192.168.2.146:/source/fs4412_rootfs init=/linuxrc rw ip=192.168.2.158 console=ttySAC2,115200
+> bootargs=root=/dev/nfs nfsroot=192.168.1.200:/rootfs/rootfs init=/linuxrc rw ip=192.168.1.123 console=ttySAC2,115200
+> bootdelay=3 延时时间
+> ethact=dm9000
+> ethaddr=11:22:33:44:55:66
+> fileaddr=41000000
+> filesize=2E3448
+> fserverip=192.168.1.200
+> gatewayip=192.168.2.134
+> ipaddr=192.168.1.123
+> netmask=255.255.255.0
+> serverip=192.168.1.200
+> stderr=serial
+> stdin=serial
+> stdout=serial
 
 >1. md 查看内存的地址
 >2. mm 修改内存的地址，地址会递增
